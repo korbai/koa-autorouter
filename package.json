@@ -1,0 +1,31 @@
+{
+  "name": "koa-autorouter",
+  "version": "1.0.2",
+  "description": "Koa router based on folder/file hierarchy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/korbai/koa-autorouter"
+  },
+  "keywords": [
+    "koa",
+    "route",
+    "router"
+  ],
+  "author": "Korbai, Zoltan <korbai.zoltan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/korbai/koa-autorouter/issues"
+  },
+  "homepage": "https://github.com/korbai/koa-autorouter",
+  "dependencies": {
+    "co-fs": "^1.2.0",
+    "debug": "^2.2.0",
+    "koa-compose": "^2.3.0",
+    "koa-router": "^5.1.2",
+    "lodash": "^3.10.1"
+  }
+}

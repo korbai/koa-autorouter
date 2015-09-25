@@ -1,0 +1,20 @@
+<div data-template-extend="main"></div>
+
+<div data-template-block="head">
+    <title>Admin Templating Demo</title>
+</div>
+
+<div data-template-block="content">
+    <h2>Admin Sample for including component</h2>
+    <div data-template-include="component"></div>
+    Hello <span id="hello"></span>
+</div>
+
+<script data-template-block="code">
+    function now() {
+        mybundle.render($, { name: 'client' });
+        setTimeout(now, 1000);
+    }
+
+    setTimeout(now, 1000);
+</script>
