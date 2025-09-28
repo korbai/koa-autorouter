@@ -1,10 +1,14 @@
 {
   "name": "koa-autorouter",
-  "version": "1.0.5",
-  "description": "Koa router based on folder/file hierarchy",
+  "version": "2.0.0",
+  "description": "Modern Koa router based on folder/file hierarchy with async/await support",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "dev": "node example/app.js",
+    "lint": "eslint *.js example/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -12,8 +16,14 @@
   },
   "keywords": [
     "koa",
+    "koa2",
     "route",
-    "router"
+    "router",
+    "autorouter",
+    "file-based-routing",
+    "async",
+    "await",
+    "modern"
   ],
   "author": "Korbai, Zoltan <korbai.zoltan@gmail.com>",
   "license": "MIT",
@@ -21,11 +31,24 @@
     "url": "https://github.com/korbai/koa-autorouter/issues"
   },
   "homepage": "https://github.com/korbai/koa-autorouter",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "dependencies": {
-    "co-fs": "^1.2.0",
-    "debug": "^4.1.1",
-    "koa-compose": "^2.3.0",
-    "koa-router": "^5.1.2",
-    "lodash": "^4.17.11"
+    "debug": "^4.4.3",
+    "koa-compose": "^4.1.0",
+    "koa-router": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.15.0",
+    "@types/koa-router": "^7.4.8",
+    "@types/node": "^20.0.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "koa": "^2.15.0",
+    "supertest": "^7.0.0"
+  },
+  "peerDependencies": {
+    "koa": "^2.0.0"
   }
 }

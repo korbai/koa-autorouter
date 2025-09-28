@@ -1,17 +1,22 @@
 {
   "name": "koa-autorouter-example",
-  "version": "1.0.0",
-  "description": "Koa folder based auto-router for views / controllers",
+  "version": "2.0.0",
+  "description": "Modern Koa autorouter example with async/await",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Korbai, Zoltan <korbai.zoltan@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "koa": "^1.0.0",
-    "koa-cheerio-template": "^1.1.4",
-    "lodash": "^4.17.11",
-    "moment": "^2.10.6"
+    "koa": "^2.15.0",
+    "koa-bodyparser": "^4.4.1",
+    "koa-views": "^8.0.0",
+    "handlebars": "^4.7.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   }
 }

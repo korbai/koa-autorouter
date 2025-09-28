@@ -1,5 +1,5 @@
-exports.index = function *(next) {
-  //this.data = this.data || {};
-  this.state.name = 'Help about reports';
-  var $ = yield this.view();
+exports.index = async function(ctx, next) {
+  // ctx.data = ctx.data || {};
+  ctx.state.name = 'Help about reports';
+  const $ = await ctx.view();
 };
